@@ -10,7 +10,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const Faculty = () => {
     const teachers = [
-        { id: 1, name: 'John Doe', company: 'Google', src: '/a1.jpg', title: 'CEO' },
+        { id: 1, name: 'John Doe', company: 'Google', src: '/a3.jpg', title: 'CEO' },
         { id: 2, name: 'Jane Smith', company: 'Wikipedia', src: '/a2.jpg', title: 'CEO' },
         { id: 3, name: 'Bob Johnson', company: 'YouTube', src: '/a3.jpg', title: 'CEO' },
         { id: 4, name: 'Alice Brown', company: 'Shazam', src: '/a4.jpg', title: 'CEO' },
@@ -29,10 +29,11 @@ const Faculty = () => {
                     <p className='text-2xl text-gray-200 text-center'>Faculty</p>
                     <h1 className='text-white text-3xl mb-6 md:text-4xl lg:text-5xl font-sans text-center'>
                         Learn from business Legends
-                    </h1></div>
+                    </h1>
+                </div>
 
 
-                <div className="relative  pt-10">
+                <div className="relative  pt-10 ">
                     {/* Navigation buttons */}
                     <div className="absolute left-0 top-[45%] z-10 cursor-pointer bg-black/30 p-3 rounded-full text-white swiper-button-prev-custom">
                         <FaArrowLeft size={24} />
@@ -62,14 +63,14 @@ const Faculty = () => {
                     >
                         {teachers.map((teacher) => (
                             <SwiperSlide key={teacher.id}>
-                                <div className='relative w-[350px] md:w-[370px] h-[400px] sm:h-[500px] lg:h-[550px] rounded-2xl mt-16 mb-16'>
+                                <div className='relative w-[360px] md:w-[370px] h-[400px] sm:h-[500px] lg:h-[550px] rounded-2xl mt-16 mb-16 mx-auto'>
                                     <Image
                                         src={teacher.src}
                                         alt={teacher.name}
                                         fill
                                         priority
                                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
-                                        className="rounded-lg object-cover"
+                                        className="rounded-lg object-cover "
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent/5 to-transparent/10"></div>
                                     <div className="absolute inset-0 flex flex-col justify-end p-4">
