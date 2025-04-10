@@ -26,7 +26,7 @@ const Why = () => {
         <p className='text-2xl text-gray-700 text-center'>Why Augment?</p>
         <h1 className=' text-3xl md:text-4xl lg:text-5xl text-black text-center pt-4'>The New MBA Experience</h1>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 items-center mt-8 w-[95%] mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-2 items-center mt-8 w-[95%] gap-10 mx-auto'>
           <div className='flex flex-col items-start'> {/* Changed from items-center to items-start */}
             <ul className='flex gap-3 text-gray-600 text-sm mt-16'>
               {[0, 1, 2].map((index) => (

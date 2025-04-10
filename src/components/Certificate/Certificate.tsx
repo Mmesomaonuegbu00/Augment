@@ -14,7 +14,7 @@ const Certificate: React.FC<CertificateProps> = ({ setPlayState }) => {
         <div className=''>
             <div className='pt-16 pb-16 '>
                 <div className=' w-[90%] rounded-lg mx-auto p-4 bg-white shadow-lg'>
-                    <div className='flex flex-col sm:flex-row justify-between items-center md:px-48 py-8 gap-10'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 items-center mt-8 w-[95%] gap-10 mx-auto'>
                         <div className='flex flex-col gap-4 max-w-[500px]'>
                             <h1 className='text-2xl md:text-3xl lg:text-4xl text-gray-700 font-semibold'>
                                 Earn a business certificate to stand out in your field
