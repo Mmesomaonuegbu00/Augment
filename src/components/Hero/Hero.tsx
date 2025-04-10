@@ -51,9 +51,9 @@ const Hero = () => {
             {/* Content */}
             <div className="relative z-10 flex gap-4 items-center pl-10 lg:pl-[20rem] mx-auto">
                 <HeroCard image="/a4.jpg"  className="hidden md:block" />
-                <HeroCard image="/a3.jpg"  className="hidden md:block" />
+                <HeroCard image="/a3.jpg"  />
                 <HeroCard image="/a5.jpg"  />
-                <HeroCard image="/a2.jpg" />
+                <HeroCard image="/a2.jpg" className="hidden md:block" />
             </div>
 
         </div>

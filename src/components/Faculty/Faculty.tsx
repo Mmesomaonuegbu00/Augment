@@ -22,7 +22,7 @@ const Faculty = () => {
     ];
 
     return (
-        <div className="bg-black pt-18 pb-18 p-6 ">
+        <div className="bg-black pt-14 pb-16 p-2">
             <div className=''>
 
                 <div className='flex flex-col items-center justify-center'>
@@ -32,7 +32,7 @@ const Faculty = () => {
                     </h1></div>
 
 
-                <div className="relative px-6 pt-16">
+                <div className="relative  pt-10">
                     {/* Navigation buttons */}
                     <div className="absolute left-0 top-[45%] z-10 cursor-pointer bg-black/30 p-3 rounded-full text-white swiper-button-prev-custom">
                         <FaArrowLeft size={24} />
@@ -62,7 +62,7 @@ const Faculty = () => {
                     >
                         {teachers.map((teacher) => (
                             <SwiperSlide key={teacher.id}>
-                                <div className='relative w-[350px] h-[400px] sm:h-[500px] lg:h-[550px] rounded-2xl mt-16 mb-16'>
+                                <div className='relative w-[350px] md:w-[370px] h-[400px] sm:h-[500px] lg:h-[550px] rounded-2xl mt-16 mb-16'>
                                     <Image
                                         src={teacher.src}
                                         alt={teacher.name}
